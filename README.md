@@ -9,7 +9,7 @@ The following picture depicts the geographic system over network.
 
 ## 2. ***Data***
 #### 2.1 Description
-As the system uses Machine learning to allocate the proper resources, we need data. But finding prepared and clean data for doing such a thing on a small scale is not much possible. So we created my own Data. The Data Creator module uses a predefined template to create data. To execute the seeder and create the data, we will now run the seeder.py file. Now, the data is created so we can move on to understand the cloud module.
+As the system uses Machine learning to allocate the proper resources, we need data. But finding prepared and clean data for doing such a thing on a small scale is not much possible. So we created our own Data. The Data Creator module uses a predefined template to create data. To execute the seeder and create the data, we will now run the seeder.py file. Now, the data is created so we can move on to understand the cloud module.
 
 #### 2.2 Process
 First the seeder module reads the seeder_data_template.csv file and creates a data based on it in /Cloud/storage/data/dat.csv file.
