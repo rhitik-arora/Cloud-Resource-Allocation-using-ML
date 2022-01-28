@@ -1,0 +1,36 @@
+position, instructions, size, high_priority, class (position)
+
+instruction: low = (1, 100), high = (101, 300)
+
+size: low = (1, 10), high = (11, 30)
+
+# 1, low,  low,  1 = 1
+# 1, low,  low,  0 = 1
+# 1, low,  high, 1 = 1
+# 1, low,  high, 0 = 1
+# 1, high, low , 1 = 1
+# 1, high, low , 0 = 2
+# 1, high, high, 1 = 3
+# 1, high, high, 0 = 2
+
+# 2, low,  low,  1 = 2
+# 2, low,  low,  0 = 1
+# 2, low,  high, 1 = 2
+# 2, low,  high, 0 = 1
+# 2, high, low , 1 = 3
+# 2, high, low , 0 = 2
+# 2, high, high, 1 = 3
+# 2, high, high, 0 = 2
+
+# 3, low,  low,  1 = 2
+# 3, low,  low,  0 = 1
+# 3, low,  high, 1 = 2
+# 3, low,  high, 0 = 1
+# 3, high, low , 1 = 3
+# 3, high, low , 0 = 2
+# 3, high, high, 1 = 3
+# 3, high, high, 0 = 3
+
+for example for the first row:
+    a task in position one, with low number of instructionsand low size with high priority,
+    it's better to allocate Worker node in position 1 to it
